@@ -4,6 +4,7 @@ title: Content-Based Recommendation System
 
 # Content-Based Recommendation System
 
+
 ## Vision Statement
 This project aims to provide hands-on experience with popular technology stacks while producing a portfolio-worthy project. It will deepen my understanding of recommendation systems and practical machine learning workflows.
 
@@ -39,6 +40,15 @@ Recommendation systems are widely used in industry, powering applications from s
 ### 6. Final Deliverable & Documentation
 - Provide a **documented implementation** of Python and FastAPI components with setup instructions.  
 - Include a **detailed README and project report** explaining the system, evaluation, and results.
+
+
+## Tools & Technologies
+- **Python 3.10+** — primary programming language for recommendation logic.
+- **FastAPI** — lightweight web framework to expose the recommendation system via API.
+- **SQLite** — relational database for storing item data and user interactions.
+- **Jinja2 Templates** — for minimal frontend UI served via FastAPI.
+- **Pandas / NumPy / Scikit-learn** — for data preprocessing, vectorization, and similarity calculations.
+
 
 ## Risks to Completion & Mitigation
 
