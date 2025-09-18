@@ -57,7 +57,7 @@ Recommendation systems are used all over the place in industry, from streaming a
 
 ## Assessments
 The finished project should:  
-- Provide a functional FastAPI backend capable of producing recommendations through at least one endpoint.  
+- Provide a functional FastAPI backend capable of producing recommendations.
 - Use a SQLite database to store item data and any user interactions.  
 - Successfully generate accurate recommendations based on a single input or user history.  
 - Include clear documentation to install, run, and test the system.  
