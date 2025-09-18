@@ -6,10 +6,7 @@ title: Projects
 # Projects
 
 ## Content-Based Recommendation System
-
-- **Description:** A Python based recommendation system using content similarity.
-- **Dataset:** TBD (Movies dataset)
-- **Tools:** Python, FastAPI, SQLite
-- **GitHub Repository:** [Will be Created Shortly]
+A Python-based recommendation engine that suggests items to users based on item attributes.
+[View Project Page](content-based-recommendation.html)
 
   
