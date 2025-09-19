@@ -33,7 +33,7 @@ innovative, impactful technology solutions.
 ## Links
 - [LinkedIn](https://www.linkedin.com/in/nicholas-swisher0621) - View my LinkedIn Profile.
 
-- [Resume](NSresume.pdf) - View my resume. 
+- [Resume](NS_resume.pdf) - View my resume. 
 
 - [Projects](projects.md) - View my current and past projects.
 
