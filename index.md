@@ -6,8 +6,8 @@ title: Home
 
 ## Welcome, thank you for visiting! Here you can find my resume, projects and social media links. 
 ---
-### About me
 
+### About me
 Motivated and analytical Computer Science student (3.8 GPA), currently in
 the final semester of a post-baccalaureate
 BS program. Holds a previous degree in
@@ -28,6 +28,7 @@ Actively seeking internship or permanent
 full time position to apply programming knowledge,
 gain industry experience, and contribute to
 innovative, impactful technology solutions.
+
 ---
 ## Links
 - [LinkedIn](https://www.linkedin.com/in/nicholas-swisher0621) - View my LinkedIn Profile.
