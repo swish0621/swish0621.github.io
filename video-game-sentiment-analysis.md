@@ -5,9 +5,7 @@ title: Video-Game-Sentiment-Analysis
 ## Repository Link
 - [GitHub Repo](https://github.com/swish0621/3308-Project.git)
 
-# Web-Project
-Team 4
-Team Ralphie / GameScope
+# Video-Game-Sentiment-Analysis
 
 - **Lucas Stackhouse**  
   GitHub: `lust6199`
@@ -18,41 +16,6 @@ Team Ralphie / GameScope
 
 ---
 
-## ðŸš€ How to Run This Project
-
-### Prerequisites
-- Firefox (front end must be run here)
-- [Python 3.10+](https://www.python.org/downloads/)
-- [Node.js & npm](https://nodejs.org/)
-
-### 1. Backend Setup (Flask)
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-cd backend
-# Create a .env file with your API keys and secrets (see .env.example if available)
-python app.py
-```
-The backend will run on [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
-### 2. Frontend Setup (React)
-#### Open a new shell
-```bash
-cd frontend/sentiment_app
-npm install
-npm start
-```
-The frontend will run on [http://localhost:3000](http://localhost:3000)
-
-### 3. Usage
-- Open the frontend URL in Firefox.
-- Enter a game title to analyze sentiment and view live data.
-
----
-
-## **Scheduled Meeting Time**
-Sundays @ 6 pm MST
 
 ## **Project Overview & Planning**
 ### **Vision Statement** 
@@ -96,7 +59,4 @@ Kanban does not rely on fixed sprint cycles, which aligns well with our projectâ
 
 - Work in Progress (WIP) Limits: 
 To maintain momentum and encourage consistent delivery of functionality, we will use WIP limits to reduce multitasking and context switching. The team will be encouraged to focus on resolving blockers before starting new tasks, helping us 		avoid bottlenecks and keep the board flowing smoothly.
-### **Project Tracking Software Link:**
- -  https://trello.com/invite/b/6848733b249b560dbd6d56bd/ATTI24989037cb513df6cabfbf08b24fc7a9949410BC/3308-team-4
 
-   
