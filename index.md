@@ -3,7 +3,9 @@ layout: default
 title: Home
 ---
 
-# Welcome to Nicholas Swisher's GitHub Page
+# Welcome! 
+## Im Nicholas Swisher. Here you can find my resume, projects and social media links. Thank you for visiting!
+## About me
 
 Motivated and analytical Computer Science student (3.8 GPA), currently in
 the final semester of a post-baccalaureate
@@ -26,13 +28,10 @@ full time position to apply programming knowledge,
 gain industry experience, and contribute to
 innovative, impactful technology solutions.
 
-## LinkedIn 
+## Links
 - [LinkedIn](www.linkedin.com/in/nicholas-swisher0621) - View my LinkedIn Profile.
 
-## Resume
 - [Resume](NSresume.pdf) - View my resume. 
-
-## Quick links
 
 - [Projects](projects.md) - View my current and past projects.
 
