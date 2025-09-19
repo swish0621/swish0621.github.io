@@ -65,4 +65,7 @@ The finished project should:
 ## Repository Link
 [Content Based Recommendation System GitHub Repository](https://github.com/swish0621/Content-Based-Recommendation-System-.git)
 
+## Project Updates 
+- [Updates](updates.md) - View Agile style project updates. 
+
 
