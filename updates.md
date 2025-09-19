@@ -16,3 +16,14 @@ This week, I plan to build a mapping of the tools and frameworks I will need to 
 The roadblocks I currently face are mainly my unfamiliarity with SQLite and FastAPI, which will require some research to gain proficiency. I have some experience with **Flask** from another class and have used **MySQL** as well, so researching the similarities and differences between the tools I know and the ones I plan to use will be necessary to progress forward.
 
 Now that I am moving out of simple brainstorming and into building a plan, I need to create a documented roadmap of the steps required to make this project a reality. I work best when I have a **broken-down list of actionable steps** to complete the project.
+
+
+## Week 2
+
+Last week, I created my project proposal, which included a more itemized outline of the project. This will help me formulate a schedule I can adhere to in order to complete the project. I also spent some time learning about and working on the setup of my GitHub.io page. I created the repository for the project and began the setup process.
+
+This week, I will begin at the top of my to-do list, search for a dataset that meets the criteria outlined in my proposal, and begin preprocessing the data. I would also like to create the file structure within the repository.
+
+The main obstacles in my way currently are the workloads of my other classes. In order to combat this, I am planning to try to get the assignments for my other classes done earlier in the week so I can spend additional time on this project.
+
+The process I used last week was suboptimal, as other classes took more time than expected and left me with less time to dedicate to this project. I think the approach outlined above will help me address this issue.
