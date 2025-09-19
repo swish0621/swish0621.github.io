@@ -57,6 +57,8 @@ Kanban boards will be maintained in Trello, providing a clear, real-time view of
 - Flexibility: 
 Kanban does not rely on fixed sprint cycles, which aligns well with our project’s dynamic nature. Certain components—such as model integration or tuning—may take longer than others. The flexibility of Kanban allows us to easily adjust task 	priorities, reassign responsibilities, and shift timelines as needed without disrupting overall workflow.
 
+--- 
+[Go Back](projects.md)
 - Work in Progress (WIP) Limits: 
 To maintain momentum and encourage consistent delivery of functionality, we will use WIP limits to reduce multitasking and context switching. The team will be encouraged to focus on resolving blockers before starting new tasks, helping us 		avoid bottlenecks and keep the board flowing smoothly.
 
