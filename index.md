@@ -4,7 +4,7 @@ title: Home
 ---
 
 
-## Welcome and thank you for visiting! Here you can find my resume, projects and social media links. 
+## Welcome, thank you for visiting! Here you can find my resume, projects and social media links. 
 ### About me
 
 Motivated and analytical Computer Science student (3.8 GPA), currently in
