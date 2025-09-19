@@ -6,13 +6,11 @@ title: Projects
 # Projects
 ---
 
-## Content-Based Recommendation System
-A Python-based recommendation engine that suggests items to users based on item attributes.
-- [View Project Page](content-based-recommendation.html)
+## [Content-Based Recommendation System](content-based-recommendation.html)
+- A Python-based recommendation engine that suggests items to users based on item attributes.
 
-## Video Game Sentiment Analysis
-Analyzes video game trends and community engagement by integrating data from IGDB, Reddit, and YouTube APIs
-- [View Project Page](video-game-sentiment-analysis.html)
+## [Video Game Sentiment Analysis](video-game-sentiment-analysis.html)
+- Analyzes video game trends and community engagement by integrating data from IGDB, Reddit, and YouTube APIs
 
 --- 
 [Go Back](index.md)
