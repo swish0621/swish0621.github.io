@@ -29,7 +29,7 @@ gain industry experience, and contribute to
 innovative, impactful technology solutions.
 
 ## Links
-- [LinkedIn](www.linkedin.com/in/nicholas-swisher0621) - View my LinkedIn Profile.
+- [LinkedIn](https://www.linkedin.com/in/nicholas-swisher0621) - View my LinkedIn Profile.
 
 - [Resume](NSresume.pdf) - View my resume. 
 
