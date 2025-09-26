@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Swisher Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#links">Links</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="side-menu" id="sideMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#links" onclick="toggleMenu()">Links</a>
+    <a href="#education" onclick="toggleMenu()">Education</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <section id="home">
+    <h1>Welcome</h1>
+    <p>I’m Nick Swisher, <br> A Computer Science student and software developer passionate about solving real-world problems with code. I focus on data-driven applications, efficient systems, and creative software solutions, and I’m ready to apply these skills in an internship or full-time role.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Motivated and analytical Computer Science student (3.8 GPA), currently in the final semester of a post-baccalaureate BS program. Holds a previous degree in Kinesiology with a minor in Psychology, offering a unique interdisciplinary perspective and a strong foundation in both technical problem-solving and human-centered thinking. Experienced in Python, SQL, C, C++, and Git/Github with hands-on project work including data-driven applications, algorithm development, and database design. Project-related exposure to HTML, CSS, JavaScript, and Scala. Passionate about applying code to solve real-world challenges, with growing interests in software development and security. Actively seeking internship or full-time opportunities to apply programming knowledge and contribute to innovative technology solutions.</p>
+  </section>
+
+  <section id="links">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/nicholas-swisher0621" target="_blank">LinkedIn</a></li>
+      <li><a href="NS_resume.pdf" target="_blank">Resume</a></li>
+      <li><a href="https://github.com/swish0621">GitHub</a> </li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <h3> University of Colorado Boulder</h3>
+    <p>Expected Graduation: Dec 2025 <br>
+        Current GPA: 3.8 <br>
+        The curriculum provided a solid understanding of computational thinking, discrete mathematics, computer systems, and cognitive aspects of computing, with hands-on exposure to data mining, specialized programming projects, and algorithm design.</p>
+    <br>
+        <h3> University of North Texas</h3>
+    <p> Graduated: May 2020 <br>
+        GPA: 3.6 <br>
+        The curriculum provided a comprehensive understanding of human anatomy, physiology, biomechanics, and exercise science, with practical experience in research methods, health assessment, and applying scientific principles to optimize physical performance and wellness.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <p>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>C</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+        </ul><br>
+        <h3>Tools and Technologies</h3>
+        <ul>
+            <li>GitHub</li>
+            <li>VSCode</li>
+            <li>Jupyter Notebook</li>
+            <li>Terminal/Command Line</li>
+            <li>MySQL Workbench</li>
+            <li>PyMongo</li>
+        </ul>
+        </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Content-Based Recommendation System</h3>
+      <p>A Python-based recommendation engine that suggests items to users based on item attributes.</p>
+      <a href="content-based-recommendation.html">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Video Game Sentiment Analysis</h3>
+      <p>Analyzes video game trends and community engagement by integrating data from IGDB, Reddit, and YouTube APIs.</p>
+      <a href="video-game-sentiment-analysis.html">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: swish0621@gmail.com <br>
+        Message me on LinkedIn: <a href="www.linkedin.com/in/nicholas-swisher0621">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    2025 Nick Swisher
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('show');
+    }
+
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
+
