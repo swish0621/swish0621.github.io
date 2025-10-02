@@ -44,7 +44,7 @@
         </ul>
       </p>
     </div>
-        <div class="update-card">
+    <div class="update-card">
       <h2>Week 3</h2>
       <p>
         <ul>
@@ -52,6 +52,24 @@
           <li> This week: I plan to design the SQLite schema structure and to create the CRUD operations necessary for its operation. In the database I plan to store the metadata of the movies along with the keyword strings, as storing entire matrix rows is not feasible given their size and sparsity. I also plan to store a user watch history in the database.</li><br>
           <li>Obstacles: The main challenge will be time management. While I have experience with designing and implementing relational databases, as well as using libraries such as pymongo, but I am new to using sqlite3 and will need to familiarize myself with its syntax and behaviors. </li><br>
           <li>Work process: I will continue using long, focused blocks to progress through my tasks as this helped me make substantial progress last week. This strategy allows me to engross myself in the content and proves to be especially effective with the education portions, allowing for deeper engagement with the content. </li>
+        </ul>
+      </p>
+    </div>
+    <div class="update-card">
+      <h2>Week 4</h2>
+      <p>
+        <ul>
+          <li>Last week: I finished loading data from another section of the dataset to obtain all metatdata about movies. I now have movie titles, genres, keywords, production companies, collection membership and a popularity metric, with data preprocessing completed. I created a relational database using SQLite and implemented CRUD operations to mange it. I also completed a load operation to populate the database with the preprocessed data. </li><br>
+          <li>This week: Now that I have the pipelines setup to import, clean and store all my data, I need to build  generalized queries to fetch data. Some examples are: <br>
+            <ul>
+            <li>Obtain all movies that contain a keyword</li>
+            <li>Obtain all movies that contain a specific genre</li>
+            <li>Obtain all movies that belong to a specific collection</li>
+          </ul>
+          These queries and more will feed data into the recommender. I plan to begin work on the recommendation system using keywords and including collection, genre and production company to create better recommendations. </li><br>
+          <li>Obstacles: Deciding how to transform my new data into a format that will be comparable with the keyword data matrix and exploring scikit learns similarity metrics are the greatest obstacles in the upcoming step. The data analysis section of my project will contain the heaviest load of required research and poses the greatest risk of exceeding the planned schedule. </li><br>
+          <li>Work Process: I will continue to utilize large focused blocks of time to progress the project, addressing one task at a time and avoiding switching between tasks. I am structuring my work to be modular, with multiple small files to preform specific tasks. For example, data import, data preprocessing, database creation, and database operations are all contained within separate files. This strategy makes debugging easier and keeps the project organized. </li>
+        </li>
         </ul>
       </p>
     </div>
