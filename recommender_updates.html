@@ -73,6 +73,23 @@
         </ul>
       </p>
     </div>
+    <div class="update-card">
+      <h2>Week 5</h2>
+      <p>
+        <ul>
+          <li>Last week: Developed SQL queries to extract keywords, genres, collections and production companies from the SQLite database, and resolving conflicting ID values in the load function.<br>Created matrices from each DataFrame with:<br>
+          <ul>
+            <li>Keywords: TfidfVectorizer</li>
+            <li>Genres / Production Companies: MultiLabelBinarizer</li>
+            <li>Collections: OneHotEncoder</li>
+          </ul>
+          Implemented combine_matrices() to merge all matrices and optionally apply weights using hstack to allow experimentation with different weights without refactoring code.</li><br>
+        <li>This week: Develop the recommender logic using cosine similarity. Implement a recommend function that accepts a list of movie ids representing the users watch history. Create a user preference vector from the watch history and return N movie recommendations. </li><br>
+        <li>Obstacles: Finding appropriate weights for the categories. If weights are skewed they may be over/under represented in recommendations. Determining handling of movies with few or zero keywords.</li><br>
+        <li>Work process: I have focused on modularity by breaking down components into self contained functions.  Designing flexible components will make fine tuning easier, while organizing work into python modules will make API and frontend development cleaner. My approach is to balance current progress with reduced complexity later, considering how my design choices will affect future efforts. </li>
+        </ul>
+      </p>
+    </div>
 
   </section>
 
