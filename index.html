@@ -32,12 +32,14 @@
 
   <section id="home">
     <h1>Welcome</h1>
-    <p>I’m Nick Swisher, <br> A Computer Science student and software developer passionate about solving real-world problems with code. I focus on data-driven applications, efficient systems, and creative software solutions, and I’m ready to apply these skills in an internship or full-time role.</p>
+    <p>I’m Nick Swisher, <br> A Computer Science student and software developer focused on building scalable systems and full-stack applications that solve real problems. I value clean architecture, efficient design, and creative, reliable code.</p>
   </section>
 
   <section id="about">
     <h2 style="text-align: center;">About Me</h2>
-    <p>Motivated and analytical Computer Science student (3.8 GPA), currently in the final semester of a post-baccalaureate BS program at University of Colorado, Boulder. Holds a previous degree in Kinesiology with a minor in Psychology from University of North Texas (UNT), offering a unique interdisciplinary perspective and a strong foundation in both technical problem-solving and human-centered thinking. Experienced in Python, SQL, C, C++, and Git/Github with hands-on project work including datadriven applications, algorithm development, and database design. Project related exposure to HTML, CSS, Java Script, and Scala. Passionate about applying code tosolve real-world challenges, with growing interests in software development, security and artificial intelligence. Actively seeking internship or permanent full time position to apply programming knowledge, gain industry experience, and contribute to innovative, impactful technology solutions.</p>
+    <p>I’m Nick Swisher, a Computer Science student at the University of Colorado Boulder pursuing a post-baccalaureate BS in Applied Computer Science (GPA 3.8, expected December 2025). My focus is on backend and systems design, building software that’s efficient, maintainable, and grounded in real world functionality.
+      <br><br>I’ve developed modular C++ applications using design patterns like Factory and Singleton, and built data-driven Python systems using FastAPI, scikit-learn, and SQLite. I enjoy solving complex engineering problems, designing clean architectures, and bringing reliable solutions to life across the full stack.
+      <br><br>My goal is to contribute to projects that challenge me to design robust software systems, whether that’s through backend development, API architecture, or scalable data driven applications.</p>
   </section>
 
   <section id="links">
@@ -53,7 +55,7 @@
     <h3> University of Colorado Boulder</h3>
     <p>Expected Graduation: Dec 2025 <br>
         Current GPA: 3.8 <br>
-        The curriculum provided a solid understanding of computational thinking, discrete mathematics, computer systems, and cognitive aspects of computing, with hands-on exposure to data mining, specialized programming projects, and algorithm design.</p>
+        Built a strong foundation in software design and development through hands-on projects focused on data structures, algorithms, and database systems. Gained experience applying object-oriented programming and modern development practices to create reliable, efficient backend solutions.</p>
     <br>
         <h3> University of North Texas</h3>
     <p> Graduated: May 2020 <br>
@@ -61,46 +63,70 @@
         The curriculum provided a comprehensive understanding of human anatomy, physiology, biomechanics, and exercise science, with practical experience in research methods, health assessment, and applying scientific principles to optimize physical performance and wellness.</p>
   </section>
 
-  <section id="skills">
-    <h2 style="text-align: center;">Technical Skills</h2>
-    <div class="list-container">
+<section id="skills">
+  <h2 style="text-align: center;">Technical Skills</h2>
+  <div class="list-container">
 
-      <div class="list-block">
-        <h3>Programming Languages</h3>
-        <ul>
-            <li>C++</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>C</li>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-        </ul>
-      </div>
-
-      <div class="list-block">
-        <h3>Tools and Technologies</h3>
-        <ul>
-            <li>GitHub</li>
-            <li>VSCode</li>
-            <li>Jupyter Notebook</li>
-            <li>Terminal/Command Line</li>
-            <li>CI/CD</li>
-            <li>PyMongo</li>
-        </ul>
-      </div>
+    <div class="list-block">
+      <h3>Programming Languages</h3>
+      <ul>
+        <li>C++</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>C</li>
+        <li>HTML/CSS</li>
+      </ul><br><br>
+      <h3>Databases & Data Tools</h3>
+      <ul>
+        <li>SQLite</li>
+        <li>MongoDB</li>
+        <li>MySQL Workbench</li>
+        <li>Tableau</li>
+      </ul>
     </div>
-  </section>
+
+    <div class="list-block">
+      <h3>Development Tools & Practices</h3>
+      <ul>
+        <li>Git / GitHub</li>
+        <li>VS Code</li>
+        <li>Command Line</li>
+        <li>OOP</li>
+        <li>TDD / Unit Testing</li>
+        <li>CI/CD</li>
+      </ul><br>
+      <h3>Frameworks & Libraries</h3>
+      <ul>
+        <li>FastAPI</li>
+        <li>scikit-learn</li>
+        <li>pandas</li>
+        <li>Catch2</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
   <section id="projects">
     <h2 style="text-align: center;">Projects</h2>
     <div class="project-card">
-      <h3>Content-Based Recommendation System</h3>
-      <p>A Python-based recommendation engine that suggests items to users based on item attributes.</p>
+      <h3>Event-Management-Platform</h3>
+      <p>A simulation of an event and ticket management system built with C++ and key design patterns to showcase OOP architecture.</p>
+      <a href="event-management-platform.html">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Content-Based-Recommendation-System</h3>
+      <p>A Python-based content recommendation engine that suggests items to users based on item attributes. The project includes a SQLite backend for storing item data, a FastAPI service to serve recommendations, and a simple evaluation framework to measure recommendation quality. Users can query the system to receive Top-N similar items for a given input.</p>
       <a href="content-based-recommendation.html">View Project</a>
     </div>
     <div class="project-card">
-      <h3>Video Game Sentiment Analysis</h3>
-      <p>Analyzes video game trends and community engagement by integrating data from IGDB, Reddit, and YouTube APIs.</p>
+      <h3>Data-Structure-Templating-and-Complexity-Testing</h3>
+      <a href="data-structure-templating-and-complexity-testing.html">View Project</a>
+      <p>A C++ project implementing three generic data structures, Linear, Tree, and HashMap, built entirely from scratch using templates. Each file defines its own structure and logic without relying on STL containers, and includes testing with Catch2 to validate and measure runtime behavior.</p>
+    </div>
+    <div class="project-card">
+      <h3>Product-Sentiment-Generator</h3>
+      <p>Full-stack Flask and React app that aggregates game data from Twitch’s IGDB API, Reddit posts, and YouTube comments, analyzes sentiment with Hugging Face, and visualizes results from a MongoDB backend.</p>
       <a href="video-game-sentiment-analysis.html">View Project</a>
     </div>
   </section>

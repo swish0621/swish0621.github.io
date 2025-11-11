@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; scroll-behavior: smooth; }
     a { color: #1a73e8; text-decoration: none; }
     a:hover { text-decoration: underline; }
