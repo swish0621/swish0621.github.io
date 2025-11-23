@@ -31,8 +31,9 @@
     #links li:hover { transform: translateY(-3px); }
 
     /* Projects */
-    #projects .project-card { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    #projects .project-card { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); transition: transform 0.2s; max-width: 100%; display: block; overflow: hidden;}
     #projects .project-card:hover { transform: translateY(-5px); }
+    #projects .project-card img { max-width: 100%; height: auto; display: block;}
 
     /* Skills */
     .list-container { display: flex; gap: 15rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;}
