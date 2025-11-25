@@ -20,55 +20,24 @@
 
   <section id="projects" class="visible">
     <div class="project-card">
-      <h2>Data Structure Templates and Complexity Testing</h2>
-      <img src="https://github.com/swish0621/Data-Structure-Templates-and-Complexity-Testing/actions/workflows/c-cpp.yml/badge.svg" alt="Build Badge">
-      <p>A C++ project implementing three generic data structures <code>Linear</code>, <code>Tree</code>, and <code>HashMap</code> built entirely from scratch using templates. Each file defines its own structure and logic without relying on STL containers and includes testing with Catch2 to validate and measure runtime behavior.</p>
-      <br>
+      <div id="readme"</div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+      <script>
+        const rawUrl = "https://raw.githubusercontent.com/swish0621/Data-Structure-Templates-and-Complexity-Testing/main/README.md";
 
-      <h3>Overview</h3>
-      <p>This project focuses on understanding container logic and templating. Each structure is templated, handles its own memory, and supports multiple data types — including built-ins, strings, and a custom <code>Person</code> struct.</p>
-      <p>Testing covers both functionality and time complexity, comparing real runtime behavior against expected Big-O performance.</p>
-      <br>
-
-      <h3>Files</h3>
-      <ul>
-        <li><strong>Linear.hpp</strong> – Implements a simple vector-based linear structure that supports insert, delete, search, and operator overloading for output.</li>
-        <li><strong>Tree.hpp</strong> – Implements a templated binary search tree with recursive insert, delete, and traversal.</li>
-        <li><strong>HashMap.hpp</strong> – Implements a hash-based container using separate chaining and dynamic resizing.</li>
-        <li><strong>Person.h</strong> – Defines a custom data type with comparison and hash operators to test generic structure support.</li>
-        <li><strong>test.cpp</strong> – Uses Catch2 to validate all structures across types and run timing comparisons.</li>
-        <li><strong>Makefile</strong> – Handles build, test, and cleanup targets.</li>
-      </ul>
-      <br>
-
-      <h3>Key Concepts</h3>
-      <ul>
-        <li>Templates and generic programming</li>
-        <li>Manual data structure implementation (no STL containers)</li>
-        <li>Operator overloading and template specialization</li>
-        <li>Hashing and collision handling</li>
-        <li>Runtime measurement using <code>std::chrono</code></li>
-        <li>Unit testing with Catch2</li>
-      </ul>
-      <br>
-
-      <h3>Time Complexity</h3>
-      <p>Testing verifies expected runtime behavior:</p>
-      <ul>
-        <li><strong>Linear:</strong> O(n) — grows linearly with input size</li>
-        <li><strong>Tree:</strong> O(log n) — maintains balanced performance unless skewed input</li>
-        <li><strong>HashMap:</strong> O(1) — constant-time average lookups and inserts</li>
-      </ul>
-      <p>The test suite benchmarks each structure using large input data (<code>data/integers.csv</code>, <code>data/decimals.csv</code>, <code>data/strings.csv</code>) and outputs real timing in milliseconds.</p>
-      <br>
-
-      <h3>Build & Run</h3>
-      <p>To build and run tests:</p>
-      <pre><code>make test
-./test
-</code></pre>
-      <br>
-
+        fetch(rawUrl)
+          .then(res => res.text())
+          .then(md => {
+            document.getElementById("readme").innerHTML = marked.parse(md);
+          })
+          .catch(err => {
+            document.getElementById("readme").innerText = "README failed to load.";
+            console.error(err);
+          });
+      </script>
+    </div>
+      
+    <div>
       <h3>Repository Link</h3>
       <p><a href="https://github.com/swish0621/Data-Structure-Templates-and-Complexity-Testing" target="_blank">GitHub Repository</a></p><br>
     </div>

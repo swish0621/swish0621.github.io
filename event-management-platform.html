@@ -20,73 +20,24 @@
 
   <section id="projects" class="visible">
     <div class="project-card">
-      <h2>Event Management Simulator</h2>
-      <img src="https://github.com/swish0621/Event-Management-Simulator/actions/workflows/c-cpp.yml/badge.svg" alt="Build Badge">
-      <p>A simulation of an event and ticket management system built with C++ and key design patterns to showcase OOP architecture. This project models a Ticketmaster-style system where users can act as attendees or organizers, create events, buy or sell tickets, and track balances handled through a CLI menu interface.</p>
-      <br>
+      <div id="readme"</div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+      <script>
+        const rawUrl = "https://raw.githubusercontent.com/swish0621/Event-Management-Platform/main/README.md";
 
-      <h3>Overview</h3>
-      <p>The core of this system revolves around <strong>object-oriented design and architecture</strong>. It’s built to demonstrate real software structure using:</p>
-      <ul>
-        <li><strong>Inheritance and polymorphism</strong> across event and user hierarchies</li>
-        <li><strong>Factory pattern</strong> for dynamic event creation</li>
-        <li><strong>Singleton pattern</strong> for centralized event management</li>
-        <li><strong>Encapsulation and abstraction</strong> to isolate logic cleanly</li>
-        <li>CSV parsing and data loading</li>
-        <li><strong>Catch2 testing</strong> for automated validation of key features</li>
-      </ul>
-      <p>Everything ties together through an <code>EventManager</code> singleton that controls program flow, tracks users, manages events, and handles all financial logic such as balances, profits, and ticket status updates.</p>
-      <br>
-
-      <h3>Features</h3>
-      <ul>
-        <li>Create new <strong>Attendee</strong> or <strong>Organizer</strong> accounts</li>
-        <li>Organizers can create events of various types (Concerts, Sports, Theater, Conventions, Comedy)</li>
-        <li>Attendees can:
-          <ul>
-            <li>Browse available events</li>
-            <li>Purchase or resell tickets</li>
-            <li>View purchase history</li>
-            <li>Manage balance and add funds</li>
-          </ul>
-        </li>
-        <li>Ticket inventory and availability update dynamically</li>
-        <li>System tracks organizer earnings and platform profit</li>
-      </ul>
-      <br>
-
-      <h3>Design Patterns Used</h3>
-      <ul>
-        <li><strong>Factory Pattern:</strong> Used in <code>EventFactory</code> to handle dynamic event creation from user input or CSV files, keeping client code clean and decoupled from event subclasses.</li>
-        <li><strong>Singleton Pattern:</strong> Implemented in <code>EventManager</code> to maintain a single controller instance that manages global system state.</li>
-      </ul>
-      <br>
-
-      <h3>System Structure</h3>
-      <ul>
-        <li><strong>Event hierarchy:</strong> defines data models and shared behavior</li>
-        <li><strong>EventFactory:</strong> central object creator</li>
-        <li><strong>EventManager:</strong> controls system flow and logic</li>
-        <li><strong>User classes:</strong> define attendee and organizer roles</li>
-        <li><strong>StringFunctions:</strong> utility for parsing input and CSV data</li>
-        <li><strong>Catch2 tests:</strong> validate functionality and architecture</li>
-      </ul>
-      <br>
-
-      <h3>Build & Run</h3>
-      <p>To build and run the main program:</p>
-      <pre><code>make
-./main
-</code></pre>
-      <p>To run the test suite:</p>
-      <pre><code>make test
-./test
-</code></pre>
-      <p>To clean build files:</p>
-      <pre><code>make clean
-</code></pre>
-      <br>
-
+        fetch(rawUrl)
+          .then(res => res.text())
+          .then(md => {
+            document.getElementById("readme").innerHTML = marked.parse(md);
+          })
+          .catch(err => {
+            document.getElementById("readme").innerText = "README failed to load.";
+            console.error(err);
+          });
+      </script>
+    </div>
+      
+    <div>
       <h3>Repository Link</h3>
       <p><a href="https://github.com/swish0621/Event-Management-Simulator" target="_blank">GitHub Repository</a></p><br>
     </div>
