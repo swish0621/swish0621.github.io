@@ -21,53 +21,25 @@
 
   <section id="projects" class="visible">
     <div class="project-card">
-      <h2>Video Game Sentiment Analysis</h2>
+      <div id="readme"</div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+      <script>
+        const rawUrl = "https://raw.githubusercontent.com/swish0621/Product-Sentiment-Generator/main/README.md";
 
-      <h3>Vision Statement</h3>
-      <p>To create a platform that empowers gamers to track live updates and game releases while analyzing public sentiment, offering real-time insights into how the gaming community reacts to new content.</p>
-      <br>
-
-      <h3>Motivation</h3>
-      <p>Updates to existing games have a major impact on the gaming community. The developers' choices in balancing gameplay, adding new content, or modifying base mechanics can trigger a wide range of reactions. These responses can be seen quickly across various online platforms, changing public perception and player engagement. By capturing and analyzing this sentiment in real time, we aim to better understand how updates influence community satisfaction.</p>
-      <br>
-
-      <h3>Tools & Technologies</h3>
-      <ul>
-        <li>Python</li>
-        <li>PyMongo</li>
-        <li>React</li>
-        <li>Flask</li>
-        <li>Praw</li>
-        <li>Requests</li>
-        <li>Transformers</li>
-        <li>Torch</li>
-      </ul><br>
-
-      <h3>Risks</h3>
-      <ul>
-        <li>The majority of our team has limited experience working on large-scale projects or collaborating in team environments.</li>
-        <li>Communication may present challenges due to differing schedules, which could impact clear and timely sharing of updates and requirements.</li>
-        <li>Several team members have little prior experience with AI tools or natural language processing models.</li>
-        <li>Accurately interpreting sarcasm, slang, and other complex language nuances may prove difficult for the model.</li>
-        <li>We may face scalability challenges given the team’s limited exposure to larger-scale system development.</li>
-        <li>Scope creep poses a risk, potentially diverting focus and resources.</li>
-        <li>Ensuring access to diverse and representative data to prevent bias and maintain consistent sentiment analysis will be challenging.</li>
-      </ul><br>
-
-      <h3>Mitigation</h3>
-      <ul>
-        <li>Assign clear tasks and responsibilities, while breaking the project into small, digestable portions as well as utilizing the agile practices.</li>
-        <li>Utilizing the project tracking software set up through trello to track tasks that need to be accomplished. Maintaining communication on an as needed basis through discord and utilize the weekly meetings to communicate updates and concerns.</li>
-        <li>Begin the project using pre trained models until we are comfortable with increasing the customization. Familiarize ourselves as needed with tuorials for the relevant tools.</li>
-        <li>Make sure the data used will encompass enough of the problematic language to accurately interperate it. Possibly provide users with a confidence flag on the interpretation.</li>
-        <li>Utlize clearly defined project structure and strict version controll methods to ensure that changes are accceptable on a range of machines.</li>
-        <li>Use clearly defined goals in the project tracking software and maintain agile practices to only do what is necessary to complete said goals.</li>
-        <li>Create testing for bias and use diverse and varied datasets.</li>
-      </ul><br>
-
+        fetch(rawUrl)
+          .then(res => res.text())
+          .then(md => {
+            document.getElementById("readme").innerHTML = marked.parse(md);
+          })
+          .catch(err => {
+            document.getElementById("readme").innerText = "README failed to load.";
+            console.error(err);
+          });
+      </script>
+    </div>
+    <div>
       <h3>Repository Link</h3>
       <p><a href="https://github.com/swish0621/3308-Project.git" target="_blank">GitHub Repository</a></p><br>
-
     </div>
   </section>
 
