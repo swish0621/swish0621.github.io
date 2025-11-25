@@ -22,27 +22,60 @@
   <section id="projects" class="visible">
     <div class="project-card">
       <div>
-        <h3>Personal Contribution</h3> Owned MongoDB + CRUD backend, built IGDB/Reddit data ingestion components, maintained API auth/keys, and supported team members in integration/debugging.
-      </div><br>
-      <div id="readme"</div>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-      <script>
-        const rawUrl = "https://raw.githubusercontent.com/swish0621/Product-Sentiment-Generator/main/README.md";
+        <h3>📌 Personal Contribution</h3>
+        Owned MongoDB + CRUD backend, built IGDB/Reddit data ingestion components, maintained API auth/keys, and supported team members in integration/debugging.<br><br>
 
-        fetch(rawUrl)
-          .then(res => res.text())
-          .then(md => {
-            document.getElementById("readme").innerHTML = marked.parse(md);
-          })
-          .catch(err => {
-            document.getElementById("readme").innerText = "README failed to load.";
-            console.error(err);
-          });
-      </script>
-    </div>
-    <div>
-      <h3>Repository Link</h3>
-      <p><a href="https://github.com/swish0621/3308-Project.git" target="_blank">GitHub Repository</a></p><br>
+        <h3>📝 Description</h3>
+        Full-stack Flask and React app that aggregates game data from Twitch’s IGDB API, Reddit posts, and YouTube comments, analyzes sentiment with Hugging Face, and visualizes results from a MongoDB backend.<br><br>
+
+        <h3>🔑 Key Learnings</h3>
+        <ul>
+          <li>Built multi-source ETL pipelines and normalized game/sentiment data.</li> 
+          <li> Designed a document schema supporting fast query + update flows.</li>
+          <li>Integrated third-party APIs with reliable auth/refresh handling and debugging support.li>
+        </ul><br>
+
+        <img src="images/sentiment_generator.png" alt="Sentiment Generator Screenshot"><br>
+
+        <section class="project-run">
+          <h2>🚀 How to Run This Project</h2>
+
+          <h3>Prerequisites</h3>
+          <ul>
+            <li>Firefox (front end must be run here)</li>
+            <li>Python 3.10+</li>
+            <li>Node.js &amp; npm</li>
+          </ul>
+
+          <h3>1. Backend Setup (Flask)</h3>
+          <pre><code>python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+cd backend
+# Create a .env file with your API keys and secrets (see .env.example if available)
+python app.py</code></pre>
+          <p>The backend will run on <code>http://127.0.0.1:5000</code></p>
+
+          <h3>2. Frontend Setup (React)</h3>
+          <p>Open a new shell</p>
+          <pre><code>cd frontend/sentiment_app
+npm install
+npm start</code></pre>
+          <p>The frontend will run on <code>http://localhost:3000</code></p>
+
+          <h3>3. Usage</h3>
+          <ol>
+            <li>Open the frontend URL in Firefox.</li>
+            <li>Enter a game title to analyze sentiment and view live data.</li>
+          </ol>
+        </section>
+
+        
+        <div>
+          <h3>Repository Link</h3>
+          <p><a href="https://github.com/swish0621/3308-Project.git" target="_blank">GitHub Repository</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
