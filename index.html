@@ -32,14 +32,13 @@
 
   <section id="home">
     <h1>Welcome</h1>
-    <p>I’m Nick Swisher, <br> A Computer Science student and software developer focused on building scalable systems and full-stack applications that solve real problems. I value clean architecture, efficient design, and creative, reliable code.</p>
+    <p>I’m Nick Swisher, a software engineer building and deploying full-stack applications with React, TypeScript, and FastAPI. I focus on clean APIs, clear data flow, and reliable code.</p>
   </section>
 
   <section id="about">
     <h2 style="text-align: center;">About Me</h2>
-    <p>I’m Nick Swisher, a Computer Science student at the University of Colorado Boulder pursuing a post-baccalaureate BS in Applied Computer Science (GPA 3.8, expected December 2025). My focus is on backend and systems design, building software that’s efficient, maintainable, and grounded in real world functionality.
-      <br><br>I’ve developed modular C++ applications using design patterns like Factory and Singleton, and built data-driven Python systems using FastAPI, scikit-learn, and SQLite. I enjoy solving complex engineering problems, designing clean architectures, and bringing reliable solutions to life across the full stack.
-      <br><br>My goal is to contribute to projects that challenge me to design robust software systems, whether that’s through backend development, API architecture, or scalable data driven applications.</p>
+    <p>I’ve built modular C++ applications using object-oriented design patterns, and developed data-driven Python services with FastAPI, SQLite, and scikit-learn. I enjoy designing clear interfaces between systems, working across the frontend–backend boundary, and writing code that’s easy to reason about and maintain.</p>
+    <p style="margin-top: 1rem;">I’m looking to contribute to teams building reliable software products, whether through full-stack development, backend services, or API-driven applications.</p>
   </section>
 
   <section id="links">
@@ -52,16 +51,22 @@
 
   <section id="education">
     <h2 style="text-align: center;">Education</h2>
-    <h3> University of Colorado Boulder</h3>
-    <p>Expected Graduation: Dec 2025 <br>
-        Current GPA: 3.8 <br>
-        Built a strong foundation in software design and development through hands-on projects focused on data structures, algorithms, and database systems. Gained experience applying object-oriented programming and modern development practices to create reliable, efficient backend solutions.</p>
-    <br>
-        <h3> University of North Texas</h3>
-    <p> Graduated: May 2020 <br>
-        GPA: 3.6 <br>
-        The curriculum provided a comprehensive understanding of human anatomy, physiology, biomechanics, and exercise science, with practical experience in research methods, health assessment, and applying scientific principles to optimize physical performance and wellness.</p>
+
+    <h3>University of Colorado Boulder</h3>
+    <p>
+      B.S. in Applied Computer Science<br>
+      Graduated: December 2025<br>
+      GPA: 3.74
+    </p>
+
+    <h3>University of North Texas</h3>
+    <p>
+      B.S. in Kinesiology<br>
+      Graduated: May 2020<br>
+      GPA: 3.6
+    </p>
   </section>
+
 
 <section id="skills">
   <h2 style="text-align: center;">Technical Skills</h2>
@@ -70,75 +75,96 @@
     <div class="list-block">
       <h3>Programming Languages</h3>
       <ul>
-        <li>C++</li>
+        <li>TypeScript</li>
+        <li>JavaScript</li>
         <li>Python</li>
+        <li>C++</li>
         <li>SQL</li>
-        <li>C</li>
         <li>HTML/CSS</li>
-      </ul><br><br>
-      <h3>Databases & Data Tools</h3>
+      </ul>
+
+      <h3>Databases</h3>
       <ul>
         <li>SQLite</li>
         <li>MongoDB</li>
-        <li>MySQL Workbench</li>
-        <li>Tableau</li>
       </ul>
     </div>
 
     <div class="list-block">
-      <h3>Development Tools & Practices</h3>
-      <ul>
-        <li>Git / GitHub</li>
-        <li>VS Code</li>
-        <li>Command Line</li>
-        <li>OOP</li>
-        <li>TDD / Unit Testing</li>
-        <li>CI/CD</li>
-      </ul><br>
       <h3>Frameworks & Libraries</h3>
       <ul>
+        <li>React</li>
         <li>FastAPI</li>
         <li>scikit-learn</li>
         <li>pandas</li>
         <li>Catch2</li>
       </ul>
+
+      <h3>Tools & Practices</h3>
+      <ul>
+        <li>Git / GitHub</li>
+        <li>GitHub Actions (CI)</li>
+        <li>Test-Driven Development (TDD)</li>
+        <li>Unit Testing</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>VS Code</li>
+        <li>Command Line</li>
+      </ul>
     </div>
+
   </div>
 </section>
+
 
 
   <section id="projects">
     <h2 style="text-align: center;">Projects</h2>
     <div class="project-card">
-      <h3>Content-Based-Recommendation-System</h3>
-      <img src="images/Content-Based-Recommendation-System.png" alt="UI Main Page">
-      <p>A metadata-driven movie similarity engine built from The Movies Dataset on Kaggle. The system preprocesses raw metadata, stores it in SQLite, generates sparse feature vectors, and computes similarity rankings using cosine similarity. A FastAPI backend serves results through a UI and API layer, with the full application deployed on Render.</p>
-      <a href="content-based-recommendation.html">View Project</a>
+      <h3>Content Recommendation System</h3>
+      <img src="images/Content-Based-Recommendation-System.png" alt="Content Recommendation System">
+      <p>Full-stack recommendation app deployed on Render. Preprocesses metadata, stores it in SQLite, and generates content-based recommendations using TF-IDF and cosine similarity. FastAPI exposes search and recommendation endpoints consumed by a React + TypeScript frontend.</p>
+      <div class="project-links">
+        <a href="https://content-based-recommendation-system-v2.onrender.com/" target="_blank">Live</a>
+        <a href="https://github.com/swish0621/Content-Based-Recommendation-System" target="_blank">GitHub</a>
+        <a href="content-based-recommendation.html">Details</a>
+      </div>
     </div>
     <div class="project-card">
-      <h3>Event-Management-Platform</h3>
-      <img src="images/Event-Managment-Platform.png" alt="CLI">
-      <p>A simulation of an event and ticket management system built with C++ and key design patterns to showcase OOP architecture.</p>
-      <a href="event-management-platform.html">View Project</a>
+      <h3>Event Management Platform</h3>
+      <img src="images/Event-Management-Platform.png" alt="Event Management Platform">
+      <p>Modular C++ backend simulation modeling users, events, and transactions, built to demonstrate object-oriented design and common patterns such as Factory and Singleton.</p>
+      <div class="project-links">
+        <a href="https://github.com/swish0621/Event-Management-Platform.git" target="_blank">GitHub</a>
+        <a href="event-management-platform.html">Details</a>
+      </div>
     </div>
+
     <div class="project-card">
-      <h3>Data-Structure-Templating-and-Complexity-Testing</h3>
-      <img src="images/templating_tests_passing.png"
-      <p>A C++ project implementing three generic data structures, Linear, Tree, and HashMap, built entirely from scratch using templates. Each file defines its own structure and logic without relying on STL containers, and includes testing with Catch2 to validate and measure runtime behavior.</p>
-      <a href="data-structure-templating-and-complexity-testing.html">View Project</a>
+      <h3>Data Structures & Benchmarking</h3>
+      <img src="images/templating_tests_passing.png" alt="Data Structures & Benchmarking">
+      <p>C++ project implementing templated HashMap, BST, and Linear List structures with Catch2 unit tests and runtime benchmarking to compare algorithmic tradeoffs.</p>
+      <div class="project-links">
+        <a href="https://github.com/swish0621/Data-Structure-Templates-and-Complexity-Testing.git" target="_blank">GitHub</a>
+        <a href="data-structure-templating-and-complexity-testing.html">Details</a>
+      </div>
     </div>
+
     <div class="project-card">
-      <h3>Product-Sentiment-Generator</h3>
-      <img src="images/sentiment_generator.png"
-      <p>Full-stack Flask and React app that aggregates game data from Twitch’s IGDB API, Reddit posts, and YouTube comments, analyzes sentiment with Hugging Face, and visualizes results from a MongoDB backend.</p>
-      <a href="video-game-sentiment-analysis.html">View Project</a>
+      <h3>Product Sentiment Generator</h3>
+      <img src="images/sentiment_generator.png" alt="Product Sentiment Generator">
+      <p>Full-stack application that aggregates game data from IGDB, Reddit, and YouTube, performs sentiment analysis with Hugging Face models, and stores results in MongoDB for visualization.</p>
+      <div class="project-links">
+        <a href="https://github.com/swish0621/Product-Sentiment-Generator.git" target="_blank">GitHub</a>
+        <a href="video-game-sentiment-analysis.html">Details</a>
+      </div>
     </div>
   </section>
+
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: swisher.n.r@gmail.com <br>
-        Message me on LinkedIn: <a href="www.linkedin.com/in/nicholas-swisher0621">LinkedIn</a></p>
+        Message me on LinkedIn: <a href="https://www.linkedin.com/in/nicholas-swisher0621" target="_blank">LinkedIn</a></p>
   </section>
 
   <footer>
